@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GuideActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/guide_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@id/guide_fragment"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+             <RadioButton
+                 android:id="@+id/guide_load"
+                 android:layout_width="50dp"
+                 android:layout_height="8dp"
+                 android:background="@drawable/ra_selector"
+                 android:button="@null"></RadioButton>
+            <RadioButton
+                android:id="@+id/guide_current"
+                android:layout_width="50dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ra_selector"
+                android:layout_marginLeft="5dp"
+                android:button="@null"></RadioButton>
+            <RadioButton
+                android:id="@+id/guide_friend"
+                android:layout_width="50dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ra_selector"
+                android:layout_marginLeft="5dp"
+                android:button="@null"></RadioButton>
+            <RadioButton
+                android:id="@+id/guide_lovewall"
+                android:layout_width="50dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ra_selector"
+                android:layout_marginLeft="5dp"
+                android:button="@null"></RadioButton>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

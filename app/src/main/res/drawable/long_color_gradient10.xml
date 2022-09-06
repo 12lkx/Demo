@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="@dimen/button_gradient_fillet" />
+
+    <gradient
+        android:angle="45"
+        android:centerColor="@color/color_gradient_X"
+        android:endColor="@color/color_gradient_11"
+        android:startColor="@color/color_gradient_12"
+        android:type="linear" />
+</shape>

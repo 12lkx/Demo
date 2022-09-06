@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical"
+    tools:context=".ServiceActivity.NewsLetterActivity">
+    <Toolbar
+        android:layout_marginTop="30dp"
+        android:id="@+id/newsLetter_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_news"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/entrance_shape"
+                android:text="学校时事"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="center"></Button>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_media"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/entrance_shape"
+                android:gravity="center"
+                android:text="媒体理工"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold"></Button>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_informations"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/entrance_shape"
+                android:text="信息公告"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="center"></Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/newsletter_recycleview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

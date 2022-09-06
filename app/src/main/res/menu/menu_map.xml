@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TencentSDK.BaseMapActivity">
+    <item
+        android:id="@+id/menu_find_poi_search"
+        android:title="搜索"
+        android:icon="@android:drawable/ic_menu_search"
+
+        app:showAsAction="ifRoom" />
+    <!-- app:actionViewClass="androidx.appcompat.widget.SearchView"-->
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/layers"
+        android:title="切换图层"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:id="@+id/search2"
+        android:icon="@drawable/back"
+        android:title="切换图层"
+        app:showAsAction="never"/>
+<!--        app:showAsAction="ifRoom"-->
+
+
+</menu>
